@@ -1,0 +1,566 @@
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+body {
+  line-height: 1;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+nav ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: 700;
+}
+del {
+  text-decoration: line-through;
+}
+abbr[title],
+dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+input,
+select {
+  vertical-align: middle;
+}
+input,
+textarea,
+button,
+select,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  height:100vh;
+  width: 100%;
+  background-color:rgba(6, 6, 124, 0.863);
+}
+main{
+  background-color: rgb(189, 189, 189);
+  width: 100%;
+  height: fit-content;
+}
+header{
+  width: 100%;
+  height: 100px;
+  background-color: transparent;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  z-index: 3;
+  font-size: 23px;
+  font-family:serif;
+  font-weight: 700;
+  font-style: italic;
+  color: white;
+  text-shadow: 1px 1px 3px black;
+  padding: 0 5%;
+}
+
+.menuSec div{
+  cursor: pointer;
+}
+.banner{
+  width: 100%;
+  height: fit-content;
+  opacity: 0.8;
+  position: relative;
+  background-image: url("../img//ban.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.banner img{
+  height: 100%;
+  width: 100%;
+}
+.recent{
+  height: fit-content;
+  width: 100%;
+  background-color: rgb(3, 3, 95);
+  padding: 2%;
+}
+.recent p{
+  color: white;
+  font-size: 20px;
+  font-style: italic;
+  font-weight: 700;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.recent section{
+  height: 200px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 2%;
+  row-gap: 20px;
+}
+.recent section div{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+}
+.recent section div .home{
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 22px;
+  font-weight: 700;
+  color: white;
+}
+.recent section div .center{
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 500;
+  font-style: italic;
+  color: white;
+}
+.recent section div .away{
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 22px;
+  font-weight: 700;
+  color: rgb(241, 240, 240);
+}
+.watchArea{
+  height: fit-content;
+  width: 100%;
+  background-color: rgba(6, 6, 124, 0.863);
+  padding: 2%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../img/sub.jpg");
+  background-position: center;
+  background-size:auto;
+  background-repeat: repeat;
+  position: relative;
+}
+.darken{
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.61);
+}
+.watchArea .getMatch{
+  min-height: 400px;
+  width: 70%;
+  background-color: rgba(4, 4, 85, 0.74);
+  border-radius: 20px;
+  position: relative;
+  z-index: 1;
+  outline: none;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  padding:2%;
+}
+.choose1{
+  height: 50px;
+  width: 50%;
+  /* background-color: red; */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.choose1 select{
+  height: 40px;
+  width: 70%;
+  border-radius: 20px;
+  background-color: transparent;
+  border-style: solid;
+  border-color: whitesmoke;
+  border-width: 2px;
+  color: whitesmoke;
+  font-size: 18px;
+  outline: none;
+}
+.choose1 select option{
+  color: black
+}
+.choose1 button{
+  height: 40px;
+  width: 25%;
+  border-radius: 20px;
+  background-color: transparent;
+  border-style: solid;
+  border-color: whitesmoke;
+  border-width: 2px;
+  color: whitesmoke;
+  font-weight: 700;
+  font-size: 17px;
+}
+.choose1 button:hover{
+  background-color: rgba(1, 1, 133, 0.856);
+}
+.choose1 button:active{
+  opacity: 0;
+}
+.matchLists{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  /* flex-direction: column; */
+  height: fit-content;
+  width: 100%;
+}
+.matchLists section{
+  height: 120px;
+  width: 100%;
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-shadow: 1px 1px 3px black;
+  padding: 5%;
+  column-gap: 30px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: transparent;
+  position: relative;
+  margin-top: 20px;
+}
+.thumbNailDiv{
+  flex: 2;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  /* background-color: red; */
+}
+.thumbNailDiv img{
+  height: 100%;
+  width: 100%;
+}
+.board{
+flex: 5;
+height: 100%;
+width: 100%;
+display: flex;
+justify-content: space-around;
+flex-direction: column;
+align-items: flex-start;
+/* background-color: orange; */
+position: relative;
+}
+.matchLists .board p{
+  /* position: absolute;
+  bottom: 0;
+  left: 0; */
+  font-size: 12px;
+  width: 100%;
+}
+.matchLists section:hover{
+  color: green;
+  border-color: white;
+}
+.videoSpace{
+  height: 420px;
+  width: 80%;
+  /*background-image: url('../img/vidbg2.jpg');*/
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  /*background-color: red; */
+}
+.cover{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.61);
+}
+.vidArea{
+  height: 350px;
+  width: 75%;
+  margin-left: 25%;
+  /* background-color: rgba(6, 6, 124, 0.863); */
+  /* padding: 2%; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+}
+.vidArea div{
+  height: 100% !important;
+  width: 100%;
+}
+.info{
+  font-size: 25px;
+  font-style: italic;
+  text-shadow: 2px 2px 3px black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  /* min-height: 100%; */
+  min-width: 100%;
+  background-color: rgb(6, 6, 87);
+}
+
+@media screen and (max-width: 872px){
+  .info{
+    font-size: 20px;
+  }
+  header{
+    margin: 5% 0 0 0 ;
+  width: 100%;
+  height: 50px;
+}
+header .logoSec{
+  font-size: 19px;
+}
+header  .menuSec{
+  font-size: 17px;
+}
+.menuSec div{
+  cursor: pointer;
+}
+.banner{
+  height: 300px;
+}
+
+.recent p{
+  font-size: 16px;
+}
+.recent section{
+  height: 100px;
+
+}
+.recent section div .home{
+  font-size: 17px;
+}
+.recent section div .center{
+  
+  font-size: 14px;
+  
+}
+.recent section div .away{
+  font-size: 17px;
+}
+  
+
+
+.watchArea .getMatch{
+  min-height: 200px;
+  width: 85%;
+  
+}
+.choose1{
+  height: 30px;
+  width: 90%;
+}
+.choose1 select{
+  height: 30px;
+  width: 50%;
+  font-size: 15px;
+  margin-top: 10px;
+}
+.choose1 select option{
+  color: black
+}
+.choose1 button{
+  height: 30px;
+  width: 40%;
+  font-size: 15px;
+  margin-top: 10px;
+}
+
+.matchLists{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  /* flex-direction: column; */
+  height: fit-content;
+  width: 100%;
+}
+.matchLists section{
+  height: 50px;
+  font-size: 14px;
+  padding: 2%;
+  column-gap: 20px;
+
+}
+.thumbNailDiv{
+  flex: 2;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  /* background-color: red; */
+}
+.thumbNailDiv img{
+  height: 100%;
+  width: 100%;
+}
+.board{
+
+margin-top:10px;
+font-size:13px;
+}
+.matchLists .board p{
+  font-size: 10px;
+}
+.matchLists section:hover{
+  color: green;
+  border-color: white;
+}
+.videoSpace{
+  height: 250px;
+  width: 100%;
+  /* background-color: red; */
+}
+
+.vidArea{
+  height: 200px;
+  width: 95%;
+}
+.vidArea div{
+  height: 100% !important;
+  width: 100%;
+}
+}
