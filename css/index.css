@@ -404,7 +404,7 @@ position: relative;
   justify-content: center;
   align-items: center;
   position: relative;
-  /*background-color: red; */
+  background-color: red; 
 }
 .cover{
   position: absolute;
