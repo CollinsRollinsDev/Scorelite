@@ -558,6 +558,7 @@ font-size:13px;
 .vidArea{
   height: 200px;
   width: 95%;
+  margin-left: 0;
 }
 .vidArea div{
   height: 100% !important;
